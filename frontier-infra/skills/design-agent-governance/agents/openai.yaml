@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Agent Governance"
+  short_description: "Define authority, gates, and overrides"
+  default_prompt: "Use $design-agent-governance to create the governance policy for my agent system."

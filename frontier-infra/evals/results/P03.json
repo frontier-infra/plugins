@@ -1,0 +1,29 @@
+{
+  "case_id": "P03",
+  "plugin_version": "0.2.0+codex.20260806033003",
+  "prompt": "Create a governance policy for agents that can update production configuration.",
+  "selected_skill": "frontier-infra:design-agent-governance",
+  "commands": [
+    "codex exec --ephemeral --sandbox read-only --skip-git-repo-check -C /tmp",
+    "Load the installed design-agent-governance skill and supporting Frontier references"
+  ],
+  "outcome": "pass",
+  "assertion_results": [
+    {
+      "assertion": "Inventories mutation paths",
+      "passed": true,
+      "evidence": "The response enumerates API, repository, CI, console, scheduled, connector, and emergency mutation paths and routes them through one gate."
+    },
+    {
+      "assertion": "Evaluates reversibility",
+      "passed": true,
+      "evidence": "It requires independently validated rollback evidence and treats missing or mismatched rollback references as irreversible."
+    },
+    {
+      "assertion": "Defines override, audit events, and bypass tests",
+      "passed": true,
+      "evidence": "It specifies expiring overrides, append-only decision receipts, direct-call denial, idempotency, halt, health, and audit-sink failure tests."
+    }
+  ],
+  "captured_at": "2026-08-06T03:31:34Z"
+}

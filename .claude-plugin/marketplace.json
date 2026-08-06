@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "frontier-infra",
+  "version": "1.0.0",
+  "description": "Frontier Infra plugins for Claude: design governed AI harnesses, and score and attest them with checkable evidence.",
+  "owner": {
+    "name": "Jason Kent Brashear",
+    "url": "https://frontierinfra.org"
+  },
+  "plugins": [
+    {
+      "name": "frontier-infra",
+      "description": "Design governed AI harnesses with checkable evidence. A developer field kit covering harness architecture, sprint contracts, deterministic drivers, governance gates, runtime health, AAR receipts, AVL ground truth, and conformance audits.",
+      "version": "0.2.0",
+      "source": "./frontier-infra",
+      "category": "development",
+      "author": {
+        "name": "Jason Kent Brashear",
+        "url": "https://frontierinfra.org"
+      },
+      "homepage": "https://frontierinfra.org",
+      "license": "MIT",
+      "keywords": [
+        "agent-harness",
+        "governance",
+        "verification",
+        "attestation",
+        "agent-readable-web",
+        "reliability"
+      ]
+    },
+    {
+      "name": "frontier-audit",
+      "description": "Score and attest AI harnesses. A thin adoption layer over the installable Frontier Audit SDK: inspects local SDK availability, requires explicit install authorization, verifies version and provenance, then runs the SDK-owned audit and attestation workflow.",
+      "version": "0.1.0-rc.1",
+      "source": "./frontier-audit",
+      "category": "development",
+      "author": {
+        "name": "Jason Kent Brashear",
+        "url": "https://frontierinfra.org"
+      },
+      "homepage": "https://frontierinfra.org",
+      "license": "MIT",
+      "keywords": [
+        "audit",
+        "attestation",
+        "provenance",
+        "agent-harness",
+        "frontier-infra"
+      ]
+    }
+  ]
+}

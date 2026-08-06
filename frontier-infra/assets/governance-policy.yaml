@@ -1,0 +1,20 @@
+governance:
+  operator_dial: 0
+  irreversible_tier: replace-tier
+  override_effect_slo_seconds:
+    mutating_halt: 5
+    dial_down: 60
+  default_on_missing_reversibility: irreversible
+  default_on_missing_or_stale_verifier: propose_only
+  default_on_expired_human_gate: deny
+  required_event_types:
+    - contract_ratified
+    - contract_revoked
+    - dial_changed
+    - override_requested
+    - override_effective
+    - gate_allowed
+    - gate_denied
+    - gate_escalated
+  receipt_sink: replace-independent-sink
+  mutation_paths: []

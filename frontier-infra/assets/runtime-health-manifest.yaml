@@ -1,0 +1,44 @@
+schema_version: frontier.machine.health.v1
+deployment_id: replace-deployment
+checked_at: "2026-08-06T00:00:00Z"
+layers:
+  process:
+    purpose: "The service process is alive and exposing a heartbeat."
+    checks:
+      - id: process-heartbeat
+        status: pass # pass | fail | unknown
+        critical: true
+        observed_at: "2026-08-06T00:00:00Z"
+        stale_after_seconds: 60
+        summary: "Process heartbeat responded."
+  scheduler:
+    purpose: "The scheduler can claim due work and advance queues."
+    checks:
+      - id: scheduler-claim
+        status: pass
+        critical: true
+        observed_at: "2026-08-06T00:00:00Z"
+        stale_after_seconds: 120
+        summary: "Scheduler claimed and acknowledged due work."
+  execution:
+    purpose: "Workers can perform representative real work, including provider auth and credit paths."
+    checks:
+      - id: provider-smoke
+        status: pass
+        critical: true
+        observed_at: "2026-08-06T00:00:00Z"
+        stale_after_seconds: 300
+        summary: "Representative worker completed a provider-backed smoke task."
+  governance:
+    purpose: "The gate can deny, allow, halt, and record decisions independently."
+    checks:
+      - id: gate-deny
+        status: pass
+        critical: true
+        observed_at: "2026-08-06T00:00:00Z"
+        stale_after_seconds: 300
+        summary: "Governance gate denied an unauthorized mutation."
+aggregate_policy:
+  status: fail_closed
+  rule: "can_mutate is true only when process, scheduler, execution, and governance all pass fresh critical checks."
+  warning: "A live process heartbeat must not mask a dead scheduler, dead worker pool, provider auth or credit failure, missing verifier, unratified contract, active override, no-ACK halt, or failed governance gate."

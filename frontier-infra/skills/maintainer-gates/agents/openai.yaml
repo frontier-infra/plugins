@@ -1,0 +1,4 @@
+interface:
+  display_name: "Adopt Maintainer Gates"
+  short_description: "Govern multi-agent repository operations"
+  default_prompt: "Use $maintainer-gates to plan and verify safer multi-agent operations in this repository."

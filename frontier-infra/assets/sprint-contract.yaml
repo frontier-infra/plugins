@@ -1,0 +1,32 @@
+contract:
+  id: replace-with-stable-id
+  status: DRAFT
+  goal: one observable outcome
+  scope:
+    in: []
+    out: []
+  definition_of_done: []
+  acceptance_tests: []
+  constraints: []
+  immutable:
+    - acceptance_tests
+  owner: replace-owner
+  autonomy_ceiling: 0
+  verification_requirements:
+    verifier_scope: []
+    freshness_seconds: 0
+  budget:
+    max_attempts: 1
+    max_wall_seconds: 0
+    max_tokens: 0
+    max_cost: 0
+  escalation:
+    channel: replace-channel
+    ack_slo_seconds: 0
+  proposed_by: replace-proposer
+  ratified_by: null
+  contract_hash: null
+  issued_at: null
+  expires_at: null
+  revoked_at: null
+  receipt_ref: null

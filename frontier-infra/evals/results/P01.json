@@ -1,0 +1,29 @@
+{
+  "case_id": "P01",
+  "plugin_version": "0.2.0+codex.20260806033003",
+  "prompt": "Explain why the prompt is not the operating system and map Frontier Infra's projects to that claim.",
+  "selected_skill": "frontier-infra:frontier-router",
+  "commands": [
+    "codex exec --ephemeral --sandbox read-only --skip-git-repo-check -C /tmp",
+    "Load the installed Frontier Infra router and its cited philosophy and project references"
+  ],
+  "outcome": "pass",
+  "assertion_results": [
+    {
+      "assertion": "Uses the four principles",
+      "passed": true,
+      "evidence": "The response grounds the answer in bounded authority, durable state, independent verification, and evidence-backed operation."
+    },
+    {
+      "assertion": "Explains two-layer verifier separation",
+      "passed": true,
+      "evidence": "It separates worker execution from independent result verification and the governance gate from the runtime it constrains."
+    },
+    {
+      "assertion": "Distinguishes standards from deployments",
+      "passed": true,
+      "evidence": "The project map labels AVL, ADL, AAR, and The Machine as standards while identifying implementations and demonstrations separately."
+    }
+  ],
+  "captured_at": "2026-08-06T03:31:34Z"
+}

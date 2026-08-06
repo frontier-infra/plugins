@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audit Machine Conformance"
+  short_description: "Test harness claims against real evidence"
+  default_prompt: "Use $machine-conformance to audit this deployment and report only evidence-backed conformance."

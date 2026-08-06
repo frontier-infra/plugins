@@ -1,0 +1,44 @@
+{
+  "name": "frontier-infra",
+  "version": "0.2.0+codex.20260806033003",
+  "description": "Design, govern, build, and audit reliable AI harnesses using Frontier Infra standards and evidence-bound patterns.",
+  "author": {
+    "name": "Jason Kent Brashear",
+    "url": "https://frontierinfra.org"
+  },
+  "homepage": "https://frontierinfra.org",
+  "repository": "https://github.com/frontier-infra",
+  "license": "MIT",
+  "keywords": [
+    "agent-harness",
+    "governance",
+    "verification",
+    "attestation",
+    "agent-readable-web",
+    "reliability"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Frontier Infra",
+    "shortDescription": "Design governed AI harnesses with checkable evidence.",
+    "longDescription": "A developer field kit for reliable AI harnesses: philosophy, architecture patterns, sprint contracts, deterministic drivers, fresh workers, independent verification, governance gates, reversibility, runtime health, AAR receipts, AVL ground truth, conformance audits, and repository operating controls. Conformance claims remain shape-stamped and evidence-bound.",
+    "developerName": "Jason Kent Brashear",
+    "category": "Productivity",
+    "capabilities": [
+      "Guidance",
+      "Templates",
+      "Verification workflows"
+    ],
+    "defaultPrompt": [
+      "Design a reliable AI harness for my workflow.",
+      "Audit my agent system against The Machine.",
+      "Add governance gates and evidence to my agents."
+    ],
+    "brandColor": "#0E7C2E",
+    "composerIcon": "./assets/frontier-infra.svg",
+    "logo": "./assets/frontier-infra.svg",
+    "websiteURL": "https://frontierinfra.org",
+    "privacyPolicyURL": "https://frontierinfra.org/privacy",
+    "termsOfServiceURL": "https://frontierinfra.org/terms"
+  }
+}

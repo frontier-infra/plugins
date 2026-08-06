@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Agent Harness"
+  short_description: "Architect a reliable evidence-first harness"
+  default_prompt: "Use $design-agent-harness to design a reliable AI harness for this workflow."

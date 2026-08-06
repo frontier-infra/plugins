@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Conductor Pipeline"
+  short_description: "Adapt a governed model-driven pipeline"
+  default_prompt: "Use $conductor-pipeline to design a governed triage and fulfillment pipeline for my domain."

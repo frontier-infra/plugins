@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Machine Deployment"
+  short_description: "Implement a durable governed AI harness"
+  default_prompt: "Use $machine-deployment to implement a Machine-shaped harness for this project."

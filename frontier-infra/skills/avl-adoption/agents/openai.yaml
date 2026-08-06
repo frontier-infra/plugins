@@ -1,0 +1,4 @@
+interface:
+  display_name: "Adopt Agent View Layer"
+  short_description: "Expose machine-readable site ground truth"
+  default_prompt: "Use $avl-adoption to make this site agent-readable and validate its AVL implementation."

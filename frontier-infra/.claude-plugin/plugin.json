@@ -1,0 +1,20 @@
+{
+  "name": "frontier-infra",
+  "description": "Design, govern, build, and audit reliable AI harnesses using Frontier Infra standards and evidence-bound patterns.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Jason Kent Brashear",
+    "url": "https://frontierinfra.org"
+  },
+  "homepage": "https://frontierinfra.org",
+  "repository": "https://github.com/frontier-infra/plugins",
+  "license": "MIT",
+  "keywords": [
+    "agent-harness",
+    "governance",
+    "verification",
+    "attestation",
+    "agent-readable-web",
+    "reliability"
+  ]
+}

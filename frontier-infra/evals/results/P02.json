@@ -1,0 +1,29 @@
+{
+  "case_id": "P02",
+  "plugin_version": "0.2.0+codex.20260806033003",
+  "prompt": "Design a coding-agent harness that survives crashes, prevents duplicate deploys, and cannot self-grade.",
+  "selected_skill": "frontier-infra:design-agent-harness",
+  "commands": [
+    "codex exec --ephemeral --sandbox read-only --skip-git-repo-check -C /tmp",
+    "Load the installed design-agent-harness skill and supporting Frontier references"
+  ],
+  "outcome": "pass",
+  "assertion_results": [
+    {
+      "assertion": "Produces the dossier",
+      "passed": true,
+      "evidence": "The response provides the outcome boundary, trust roles, state machine, ports, policies, thin slice, and deferred controls."
+    },
+    {
+      "assertion": "Defines durable states and trust roles",
+      "passed": true,
+      "evidence": "It defines persisted lifecycle states and distinct proposer, ratifier, worker, verifier, governance, and operator principals."
+    },
+    {
+      "assertion": "Includes kill, duplicate, and lying-worker tests",
+      "passed": true,
+      "evidence": "The test plan kills the executor around the effect boundary, races duplicate deploys, and denies a worker's unsupported success claim."
+    }
+  ],
+  "captured_at": "2026-08-06T03:31:34Z"
+}

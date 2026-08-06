@@ -1,0 +1,57 @@
+{
+  "canonical_repository": "https://github.com/frontier-infra/frontier-sdk",
+  "protocol_package_version": "0.1.0",
+  "schema_version": "frontier.machine.health.v1",
+  "files": {
+    "assets/generated/runtime-health.mjs": {
+      "generated_sha256": "14f22ff13441ad6c34fb7eb70a315ca7d6feefc5ffb5b02ad21e9346e1cd4f57",
+      "source": "packages/typescript/protocol/src/index.mjs",
+      "source_sha256": "8e9316866d549ccbd69315077d11db93dac218a73d5fb45510a9bb5adb5d4a3d"
+    },
+    "assets/runtime-health-contract.schema.json": {
+      "generated_sha256": "e5c5d6957fa251a70c90ba106ee60d203b1992de84aa1d3af379e9243ba7cb02",
+      "source": "schemas/frontier.machine.health.v1.schema.json",
+      "source_sha256": "e5c5d6957fa251a70c90ba106ee60d203b1992de84aa1d3af379e9243ba7cb02"
+    },
+    "evals/fixtures/runtime-health/degraded-optional-check.json": {
+      "generated_sha256": "d5fef9974bef6daef9c1bd49bc259049fc87b02b9370f9f5c6051a9af4f00365",
+      "source": "conformance/runtime-health/degraded-optional-check.json",
+      "source_sha256": "d5fef9974bef6daef9c1bd49bc259049fc87b02b9370f9f5c6051a9af4f00365"
+    },
+    "evals/fixtures/runtime-health/governance-dead.json": {
+      "generated_sha256": "bbb7806c243b98e2466f3e45002e60105e07df1ed1049b3da3fa2a54a980472f",
+      "source": "conformance/runtime-health/governance-dead.json",
+      "source_sha256": "bbb7806c243b98e2466f3e45002e60105e07df1ed1049b3da3fa2a54a980472f"
+    },
+    "evals/fixtures/runtime-health/healthy.json": {
+      "generated_sha256": "80b11866118d652392db3a674f9f47d1571bb8502760ea7cf0ce8eda2428c5e7",
+      "source": "conformance/runtime-health/healthy.json",
+      "source_sha256": "80b11866118d652392db3a674f9f47d1571bb8502760ea7cf0ce8eda2428c5e7"
+    },
+    "evals/fixtures/runtime-health/invalid-structural-evidence.json": {
+      "generated_sha256": "d3096b28c3aa8893b3e942709250823c300225e2a39d48e9910f4828d3c5e853",
+      "source": "conformance/runtime-health/invalid-structural-evidence.json",
+      "source_sha256": "d3096b28c3aa8893b3e942709250823c300225e2a39d48e9910f4828d3c5e853"
+    },
+    "evals/fixtures/runtime-health/mixed-blocker-propose-only.json": {
+      "generated_sha256": "822852c010e16e9b3d4b0f32dd906e2621d144e538e6803cb64e625aad8b31b5",
+      "source": "conformance/runtime-health/mixed-blocker-propose-only.json",
+      "source_sha256": "822852c010e16e9b3d4b0f32dd906e2621d144e538e6803cb64e625aad8b31b5"
+    },
+    "evals/fixtures/runtime-health/operator-halt.json": {
+      "generated_sha256": "8d208a0367c69bf5c91b4de6e8a706bb5dff4dbeab0ad12bad6cffbc1aec3d13",
+      "source": "conformance/runtime-health/operator-halt.json",
+      "source_sha256": "8d208a0367c69bf5c91b4de6e8a706bb5dff4dbeab0ad12bad6cffbc1aec3d13"
+    },
+    "evals/fixtures/runtime-health/process-only.json": {
+      "generated_sha256": "934c2afa0066e70c91accecc29754a174a81a0e10e3d92c9aecf4a62ba8581d2",
+      "source": "conformance/runtime-health/process-only.json",
+      "source_sha256": "934c2afa0066e70c91accecc29754a174a81a0e10e3d92c9aecf4a62ba8581d2"
+    },
+    "evals/fixtures/runtime-health/provider-credit-auth-failure.json": {
+      "generated_sha256": "474bdb42f45bd2bbb55179737f91f7a602dd48cac328075770d8336f959204be",
+      "source": "conformance/runtime-health/provider-credit-auth-failure.json",
+      "source_sha256": "474bdb42f45bd2bbb55179737f91f7a602dd48cac328075770d8336f959204be"
+    }
+  }
+}

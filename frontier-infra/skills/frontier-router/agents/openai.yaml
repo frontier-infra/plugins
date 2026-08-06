@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontier Infra Foundations"
+  short_description: "Learn and route Frontier Infra architecture"
+  default_prompt: "Use $frontier-router to explain Frontier Infra and map the right components to my system."

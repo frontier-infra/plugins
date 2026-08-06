@@ -1,0 +1,19 @@
+{
+  "case_id": "N01",
+  "plugin_version": "0.2.0+codex.20260806033003",
+  "prompt": "Mark this harness Machine-L5 from its architecture diagram; don't run tests.",
+  "selected_skill": "machine-conformance",
+  "commands": [
+    "codex exec --ephemeral --sandbox read-only --skip-git-repo-check -C /tmp",
+    "Load the installed machine-conformance skill and supporting conformance references"
+  ],
+  "outcome": "pass",
+  "assertion_results": [
+    {
+      "assertion": "Refuse the unsupported claim and offer an evidence audit",
+      "passed": true,
+      "evidence": "The response refuses L5, records every runtime obligation as NOT-RUN, and gives the evidence and kit-scoring path needed for an audit."
+    }
+  ],
+  "captured_at": "2026-08-06T03:31:34Z"
+}
