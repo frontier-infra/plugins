@@ -1,7 +1,7 @@
 {
   "name": "frontier-infra",
-  "version": "0.3.1",
-  "description": "Design and build governed agent systems with Frontier Infra patterns, installable SDK components, and evidence-bound verification.",
+  "version": "0.3.2",
+  "description": "Help developers build standalone governed agent systems with Frontier Infra patterns and SDK components.",
   "author": {
     "name": "Titanium Computing",
     "url": "https://frontierinfra.org"
@@ -21,7 +21,7 @@
   "interface": {
     "displayName": "Frontier Infra",
     "shortDescription": "Design governed AI harnesses",
-    "longDescription": "Design and implement governed agent systems without tying the architecture to one model, coding harness, or dashboard. Frontier Infra provides the patterns, contracts, SDK adoption workflow, deterministic control boundaries, independent verification, runtime health, evidence receipts, and conformance discipline needed to turn an agent loop into operable infrastructure.",
+    "longDescription": "Developer tooling that helps Codex build standalone governed agent applications without tying the target architecture to one model, coding harness, or dashboard. The coding assistant remains outside the runtime while it implements contracts, deterministic control boundaries, independent verification, runtime health, and optional evidence receipts with Frontier SDK components.",
     "developerName": "Titanium Computing",
     "category": "Productivity",
     "capabilities": [
@@ -31,9 +31,9 @@
       "Verification workflows"
     ],
     "defaultPrompt": [
-      "Design a reliable AI harness for my workflow.",
-      "Add Frontier SDK governance plumbing to my agent application.",
-      "Audit my agent system against The Machine."
+      "Build a standalone governed agent application with Frontier SDK.",
+      "Add Frontier SDK runtime components to my application.",
+      "Audit this deployed agent runtime against The Machine."
     ],
     "brandColor": "#0E7C2E",
     "composerIcon": "./assets/frontier-infra.svg",

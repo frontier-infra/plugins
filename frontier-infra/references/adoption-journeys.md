@@ -1,5 +1,11 @@
 # Adoption journeys
 
+In every journey, the coding assistant is the developer outside the target
+runtime. Apply worker, verifier, contract, gate, health, and receipt semantics
+to the application being built. Govern the development workflow itself only
+when the user explicitly selects that journey or a real enforcement adapter is
+installed.
+
 ## Learn and map
 
 Use `frontier-router` to explain the philosophy, map existing components, classify the intended deployment shape, and identify the smallest adoption that closes a real failure.
@@ -14,7 +20,11 @@ Start with `machine-conformance` in audit-only mode. Preserve current behavior, 
 
 ## Run one bounded coding goal
 
-Use `goal-contract`; keep autonomy at propose-only; dispatch fresh workers; execute independent acceptance checks; land changes through repository controls. Add AAR only when portable proof is useful.
+This is an optional developer-workflow integration, not a prerequisite for
+using the SDK. When explicitly requested, use `goal-contract`; keep autonomy at
+propose-only; dispatch fresh workers; execute independent acceptance checks;
+land changes through repository controls. Add AAR only when portable proof is
+useful.
 
 ## Build a model-driven pipeline
 

@@ -7,6 +7,11 @@ description: Turn a rough agent task or project increment into a bounded, indepe
 
 Use `../../assets/sprint-contract.yaml` as the artifact. Read `../../references/philosophy.md` for the two-layer independence rule.
 
+This skill authors a contract for work that the target system will dispatch.
+It may contract the current development task only when the user explicitly
+asks for that outcome or an installed ADL/Proctor-style integration requires
+it. Plugin presence alone is not such an integration.
+
 ## Workflow
 
 1. Convert the request into one observable outcome. Separate desired effect from implementation method.

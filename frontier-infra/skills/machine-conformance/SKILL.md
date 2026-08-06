@@ -7,6 +7,10 @@ description: Audit, score, or challenge an existing AI harness against Frontier 
 
 Read `../../references/conformance.md`, `../../references/system-architecture.md`, and `../../references/threat-model.md`.
 
+Audit an explicitly identified target deployment. Do not automatically score
+the repository being edited, the builder's process, this plugin, or the SDK's
+distribution as a condition of using Frontier to build an application.
+
 ## Workflow
 
 1. Audit the deployment wiring, not a standard, library, diagram, or README.

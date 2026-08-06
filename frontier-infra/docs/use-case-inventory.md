@@ -1,17 +1,18 @@
 # Use-case inventory
 
-| User goal | Example request | Result | Capability | Safety boundary | v0.2 |
+| User goal | Example request | Result | Capability | Safety boundary | v0.3 |
 | --- | --- | --- | --- | --- | --- |
 | Learn the system | “Why isn't the prompt the OS?” | Accurate philosophy and boundaries. | `frontier-router` | Do not turn doctrine into unsupported product claims. | Supported |
 | Choose components | “Do I need AVL, AAR, or The Machine?” | Minimal component map and adoption path. | `frontier-router` | Distinguish standards, deployments, and experiments. | Supported |
+| Build a standalone product | “Add a governed agent workforce to my application.” | Working target-runtime integration using published SDK components. | `build-with-frontier-sdk` | The coding assistant is the developer, not a worker in the target runtime. | Supported |
 | Design a harness | “Architect a reliable coding-agent loop.” | Complete design dossier and thin slice. | `design-agent-harness` | No implementation before trust/mutation model is testable. | Supported |
 | Govern authority | “How should agents earn write access?” | Governance policy and negative tests. | `design-agent-governance` | Missing verifier/reversibility defaults closed. | Supported |
-| Ratify work | “Lock this task before an agent starts.” | Bounded draft contract. | `goal-contract` | Never fabricate ratification or signatures. | Supported |
+| Ratify runtime work | “Make my application lock each delegated task before dispatch.” | Bounded draft contract capability in the target runtime. | `goal-contract` | Do not contract the builder's coding session unless explicitly requested or actually enforced. | Supported |
 | Build a Machine | “Implement a resumable verified driver.” | Machine-shaped harness implementation. | `machine-deployment` | Model-free control loop required for Machine shape; static review is only a structural candidate. | Supported |
 | Audit a harness | “Does this actually conform?” | PASS/FAIL/NOT-RUN matrix and shaped verdict. | `machine-conformance` + `npx -y @frontier-infra/audit` (or the sibling `frontier-audit` plugin) | Evidence over README claims; missing fixtures stay `NOT-RUN`. | Supported |
 | Build an orchestrator | “Adapt Conductor to security triage.” | Config/engine/skill/gate design. | `conductor-pipeline` | Orchestrator-L4 ceiling; untrusted intake is read-only. | Supported |
 | Expose site ground truth | “Make my product agent-readable.” | AVL implementation and validator evidence. | `avl-adoption` | Auth stays server-side; declared actions are not authorization. | Supported |
-| Prove an outcome | “Issue a signed receipt for this deploy.” | Verified AAR and limitations. | `aar-attestation` | Operator retains private key; signature is not truth. | Supported |
+| Prove a runtime outcome | “Issue a signed receipt for this deployment result.” | Verified AAR and limitations. | `aar-attestation` | Operator retains private key; signature is not truth; builder self-attestation is out of scope by default. | Supported |
 | Govern a repository | “Install safe multi-agent PR operations.” | Blueprint manifest, gates, and verification. | `maintainer-gates` | Target patterns reviewed before enabling. | Supported |
 | Dispatch remote workers | “Run this on my T3 node.” | Remote task execution. | MCP/Switchyard | Credentials and external side effects. | Deferred |
 | Sign with hosted identity | “Sign this using Frontier Infra.” | Hosted signature. | Hosted service | Custody, auth, audit, liability. | Intentionally excluded |

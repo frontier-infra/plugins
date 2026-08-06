@@ -7,6 +7,10 @@ description: Design, create, inspect, sign, verify, or integrate Agent Attestati
 
 Read `../../references/philosophy.md` for the signed-versus-true boundary and `../../references/threat-model.md` for verifier and secret risks.
 
+Attest a target-runtime claim or outcome that the user has asked to make
+portable. Do not issue an AAR for the coding assistant's patch, the plugin's
+distribution, or SDK installation merely because this skill is available.
+
 ## Workflow
 
 1. Fix the task claim and identify the subject, principal, verifier, verification method, independence class, and real-world source.

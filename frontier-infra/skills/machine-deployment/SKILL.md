@@ -5,17 +5,23 @@ description: Implement, adapt, or harden a Frontier Infra Machine-shaped AI harn
 
 # Deploy The Machine
 
-Read `../../references/system-architecture.md`, `../../references/pattern-catalog.md`, and `../../references/threat-model.md`. If the control loop asks a model to choose the next transition, stop and use `conductor-pipeline` or explicitly redesign it as an orchestrator shape.
+Read `../../references/philosophy.md`, `../../references/system-architecture.md`, `../../references/pattern-catalog.md`, and `../../references/threat-model.md`. If the control loop asks a model to choose the next transition, stop and use `conductor-pipeline` or explicitly redesign it as an orchestrator shape.
 
-## Before implementation
+You are implementing the target Machine, not participating in it as a worker.
 
-Use `goal-contract` to produce a ratifiable contract with:
+## Target runtime contract
+
+Implement or adapt a ratifiable work-contract capability in the target runtime with:
 
 - one outcome-oriented definition of done;
 - runnable acceptance checks and immutable constraints;
-- an independently ratified contract (`ratified_by` differs from `proposed_by`) before commit-capable work;
+- an independently ratified contract (`ratified_by` differs from `proposed_by`) before the target runtime performs commit-capable work;
 - worker-run and wall-time budgets;
 - a conservative initial autonomy ceiling (`0` / propose-only).
+
+Do not use `goal-contract` to gate the current coding task unless the user
+explicitly asks to govern the development workflow or a real ADL/Proctor-style
+integration already enforces it.
 
 ## Required deployment shape
 
@@ -37,14 +43,15 @@ Start from the working deployments instead of a blank page: `machine-driver`
 for code work with Machine-L2 evidence; `conductor-public` is the
 orchestrator-shaped ops template. Adapt; do not reinvent.
 
-## Verification
+## Target deployment verification
 
-Hand off to `machine-conformance` for scoring. At minimum run kill/resume, duplicate replay, lying-worker, missing/stale-verifier, forged-rollback, cap/quarantine, override, bypass, and dead-workforce health fixtures before claiming enforcement.
+Run kill/resume, duplicate replay, lying-worker, missing/stale-verifier, forged-rollback, cap/quarantine, override, bypass, and dead-workforce health fixtures against the target deployment before claiming enforcement.
 
 Validate runtime health with the published reducer — add `@frontier-infra/protocol`
 to the deployment and evaluate records with `evaluateRuntimeHealth` /
-`runtimeHealthExitCode`. Score the repository with the published CLI, which
-bundles The Machine's static kit:
+`runtimeHealthExitCode`. When the user requests a conformance claim or the
+target's release criteria require it, score the target deployment repository
+with the published CLI, which bundles The Machine's static kit:
 
 ```sh
 npx -y @frontier-infra/audit run <path-to-deployment-repo> --out <dir-outside-that-repo>

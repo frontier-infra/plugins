@@ -1,4 +1,4 @@
 interface:
   display_name: "Goal Contract"
   short_description: "Create a ratifiable bounded work contract"
-  default_prompt: "Use $goal-contract to turn this task into a bounded independently ratifiable contract."
+  default_prompt: "Use $goal-contract to define a bounded independently ratifiable contract for work dispatched by my application."

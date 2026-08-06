@@ -15,12 +15,13 @@ Use this as the teaching and routing entry point. Read the references that match
 
 ## Workflow
 
-1. Identify the outcome, durable effects, failure history, trust roles, and required autonomy.
-2. Determine whether the user needs education, a design, an implementation, or an audit.
-3. Select the smallest components that close those failure modes; distinguish standards from deployments and experiments.
-4. State the intended deployment shape: `machine`, `orchestrator`, or neither.
-5. Separate what will be instructed, instrumented, enforced, receipted, and independently verified.
-6. Route implementation work to the focused skill and name the artifacts that will prove completion.
+1. Resolve roles first. By default, the coding assistant is the developer and the user's product is the target application; do not cast the developer as one of the application's workers, verifiers, or governed subjects.
+2. Identify the target application's outcome, durable effects, failure history, trust roles, and required autonomy.
+3. Determine whether the user needs education, a design, an implementation, or an explicitly requested audit.
+4. Select the smallest components that close those failure modes; distinguish standards from deployments and experiments.
+5. State the intended target deployment shape: `machine`, `orchestrator`, or neither.
+6. Separate what the target application will instruct, instrument, enforce, receipt, and independently verify.
+7. Route implementation work to the focused skill and name the target artifacts and tests that will prove completion.
 
 ## Composition guide
 
@@ -37,6 +38,7 @@ Use this as the teaching and routing entry point. Read the references that match
 
 ## Boundaries
 
+- Apply Frontier semantics to the target system. Do not govern, contract, audit, or attest the interactive builder's process merely because the plugin is present.
 - Do not call an AAR's signature proof that the underlying claim is true; it proves who attested and what evidence was committed.
 - Do not call a model-driven controller a Dumb Driver. Use the orchestrator shape and its lower guarantee ceiling.
 - Do not call retries resilience without idempotency, budgets, quarantine, alerts, and kill/resume evidence.

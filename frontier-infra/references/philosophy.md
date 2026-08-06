@@ -8,6 +8,29 @@
 - **Worker:** a replaceable model session scoped to one move.
 - **Reality:** the external state against which a claim can be checked.
 
+## Builder boundary
+
+The coding assistant using this field kit is the developer of the target
+application, not a worker inside that application. Frontier's worker,
+verifier, contract, gate, health, and receipt requirements describe the
+software being built and its runtime principals.
+
+Use the same distinction as any other SDK: a developer building a game is not
+one of its NPCs. Do not turn the interactive coding session into a Frontier
+deployment, ratify the developer's task, govern host-tool permissions, audit
+the plugin distribution, or issue receipts for the patch merely because this
+plugin is installed.
+
+The boundary changes only when one of these is explicit:
+
+- the user asks to govern, contract, audit, or attest the current development
+  process itself;
+- ADL, Proctor, Maintainer Gates, or another enforcement integration is
+  actually installed for that process; or
+- the finished application deliberately invokes the same provider through a
+  runtime worker adapter. Those runtime invocations are workers; the
+  interactive developer remains outside the runtime.
+
 ## The four foundation principles
 
 1. **Independent Judgment** — the subject and judge differ at contract ratification and result verification.

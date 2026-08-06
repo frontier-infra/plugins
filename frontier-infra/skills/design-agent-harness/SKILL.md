@@ -5,6 +5,9 @@ description: Architect a new AI agent harness or redesign an unreliable loop, in
 
 # Design an agent harness
 
+Design the user's target application. The coding assistant is its architect
+and implementer, not a runtime worker or governed subject.
+
 Read these references before designing:
 
 - `../../references/philosophy.md`
@@ -30,4 +33,6 @@ Use `../../assets/harness-design-dossier.md` as the output structure.
 
 Return the completed dossier, a short architecture decision summary, the first thin vertical slice, its acceptance/chaos tests, and the controls deliberately deferred. Flag assumptions that materially change trust or authority.
 
-Do not produce implementation code until the trust roles, mutation paths, state machine, and verification source are concrete enough to test.
+Make the target runtime's trust roles, mutation paths, state machine, and
+verification source concrete enough to test, then implement the requested
+slice. This design prerequisite does not ratify or govern the coding session.

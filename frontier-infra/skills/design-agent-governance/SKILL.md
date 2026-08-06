@@ -5,6 +5,11 @@ description: Design or review governance for an AI harness, including authority 
 
 # Design agent governance
 
+Govern the target application's runtime principals and effects. Do not treat
+the coding assistant, its host permissions, or its implementation process as
+part of that governance plane unless the user explicitly asks for a developer-
+workflow integration.
+
 Read `../../references/system-architecture.md`, `../../references/threat-model.md`, and `../../docs/runtime-health-contract.md`. Use `../../assets/governance-policy.yaml` and `../../assets/runtime-health-manifest.yaml` as starting artifacts.
 
 ## Workflow

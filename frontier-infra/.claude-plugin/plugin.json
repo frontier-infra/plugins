@@ -1,9 +1,9 @@
 {
   "name": "frontier-infra",
-  "description": "Design, govern, build, and audit reliable AI harnesses using Frontier Infra standards and evidence-bound patterns.",
-  "version": "0.3.1",
+  "description": "Help developers build standalone governed agent systems using Frontier Infra standards and SDK components.",
+  "version": "0.3.2",
   "author": {
-    "name": "Jason Kent Brashear",
+    "name": "Jason Brashear",
     "url": "https://frontierinfra.org"
   },
   "homepage": "https://frontierinfra.org",
