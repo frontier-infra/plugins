@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build with Frontier SDK"
+  short_description: "Assemble a governed harness from published packages"
+  default_prompt: "Use $build-with-frontier-sdk to implement this with the published @frontier-infra packages instead of hand-rolled equivalents."

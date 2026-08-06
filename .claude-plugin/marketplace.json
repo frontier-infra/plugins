@@ -11,7 +11,7 @@
     {
       "name": "frontier-infra",
       "description": "Design governed AI harnesses with checkable evidence. A developer field kit covering harness architecture, sprint contracts, deterministic drivers, governance gates, runtime health, AAR receipts, AVL ground truth, and conformance audits.",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "source": "./frontier-infra",
       "category": "development",
       "author": {

@@ -14,7 +14,7 @@ Claude Code and Cowork marketplace for the Frontier Infra stack.
 
 | Plugin | Skills | What it does |
 | --- | --- | --- |
-| `frontier-infra` | 10 | Design governed AI harnesses with checkable evidence — harness architecture, sprint contracts, deterministic drivers, governance gates, runtime health, AAR receipts, AVL ground truth, conformance audits, repository operating controls. |
+| `frontier-infra` | 11 | Design governed AI harnesses with checkable evidence — harness architecture, sprint contracts, building with the published SDK packages, deterministic drivers, governance gates, runtime health, AAR receipts, AVL ground truth, conformance audits, repository operating controls. |
 | `frontier-audit` | 1 | Score a repository against The Machine's conformance kit and optionally issue a signed AAR evidence receipt. Runs the published `@frontier-infra/audit` CLI via `npx` — the evidence packet records the exact CLI version that produced it. |
 
 ## Layout

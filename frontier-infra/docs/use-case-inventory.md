@@ -8,7 +8,7 @@
 | Govern authority | “How should agents earn write access?” | Governance policy and negative tests. | `design-agent-governance` | Missing verifier/reversibility defaults closed. | Supported |
 | Ratify work | “Lock this task before an agent starts.” | Bounded draft contract. | `goal-contract` | Never fabricate ratification or signatures. | Supported |
 | Build a Machine | “Implement a resumable verified driver.” | Machine-shaped harness implementation. | `machine-deployment` | Model-free control loop required for Machine shape; static review is only a structural candidate. | Supported |
-| Audit a harness | “Does this actually conform?” | PASS/FAIL/NOT-RUN matrix and shaped verdict. | `machine-conformance` | Evidence over README claims; missing fixtures stay `NOT-RUN`. | Supported |
+| Audit a harness | “Does this actually conform?” | PASS/FAIL/NOT-RUN matrix and shaped verdict. | `machine-conformance` + `npx -y @frontier-infra/audit` (or the sibling `frontier-audit` plugin) | Evidence over README claims; missing fixtures stay `NOT-RUN`. | Supported |
 | Build an orchestrator | “Adapt Conductor to security triage.” | Config/engine/skill/gate design. | `conductor-pipeline` | Orchestrator-L4 ceiling; untrusted intake is read-only. | Supported |
 | Expose site ground truth | “Make my product agent-readable.” | AVL implementation and validator evidence. | `avl-adoption` | Auth stays server-side; declared actions are not authorization. | Supported |
 | Prove an outcome | “Issue a signed receipt for this deploy.” | Verified AAR and limitations. | `aar-attestation` | Operator retains private key; signature is not truth. | Supported |

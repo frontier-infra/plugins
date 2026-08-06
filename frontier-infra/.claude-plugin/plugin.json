@@ -1,7 +1,7 @@
 {
   "name": "frontier-infra",
   "description": "Design, govern, build, and audit reliable AI harnesses using Frontier Infra standards and evidence-bound patterns.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "Jason Kent Brashear",
     "url": "https://frontierinfra.org"

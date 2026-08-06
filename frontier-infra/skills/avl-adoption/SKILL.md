@@ -13,10 +13,11 @@ Read `../../references/philosophy.md` when explaining why ground-truth views bel
 2. Inventory the human pages, agent companions, discovery signals, content negotiation, states, actions, schemas, and authorization boundaries.
 3. Define what an independent verifier can observe without trusting the worker.
 4. Implement the smallest native integration; preserve the host platform's permissions, escaping, lifecycle, and packaging conventions.
-5. Validate the file or live URL with the current AVL CLI:
+5. Validate with the published AVL CLI — `validate` for live URLs, `validate-file` for local files, `--level` to target a conformance rung:
 
    ```sh
-   npx @frontier-infra/avl validate <url-or-file> --json
+   npx -y @frontier-infra/avl validate <url> --json
+   npx -y @frontier-infra/avl validate-file <path> --json --level L3
    ```
 
 6. Test direct discovery, Link headers/content negotiation where used, human rendering, agent rendering, auth-denied paths, and every declared action separately.
@@ -27,5 +28,3 @@ Read `../../references/philosophy.md` when explaining why ground-truth views bel
 - Treat agent action declarations as public API documentation: validate inputs, enforce authorization server-side, and avoid exposing internal operations.
 - Escape all user-controlled output by the host platform convention.
 - Do not introduce hidden tracking, remote code, or automatic external calls.
-
-For CMS-adapter work, follow the more detailed `avl-cms-adapter` skill when it is installed; this skill supplies the general adoption path.

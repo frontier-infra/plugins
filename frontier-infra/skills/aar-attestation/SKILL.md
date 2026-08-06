@@ -12,13 +12,15 @@ Read `../../references/philosophy.md` for the signed-versus-true boundary and `.
 1. Fix the task claim and identify the subject, principal, verifier, verification method, independence class, and real-world source.
 2. Run the check before deciding verdict or `ground_truth`; retain the raw result outside the model narrative.
 3. Commit only necessary evidence: source, query/check, observation time, response hash, and a minimal non-sensitive excerpt.
-4. Discover the current upstream AAR schema and tooling before constructing a record. Prefer a checked-out `frontier-infra/agentcontrolplane` repository, installed package docs, or an available `aar` executable. If no current schema/tooling is available, stop with a prerequisite instead of inventing fields from memory.
+4. Use the published tooling instead of inventing fields from memory: `npx -y @frontier-infra/audit` bundles the canonical AAR signer/verifier (`agentcontrolplane/tools/aar.mjs`); the spec lives in `frontier-infra/agentcontrolplane`.
 5. Sign only through an operator-selected local key path and the discovered local tool. Never request, echo, copy, log, or bundle a private key. If key material was pasted into a prompt, transcript, issue, log, or other non-secret channel, treat it as exposed: refuse to use it, tell the operator to revoke or rotate it through their key-management process, and continue only with a newly provisioned key referenced by a local path or secret handle.
-6. Verify the final bytes independently with the discovered verifier command. For example, only run this if `aar` is actually available in `PATH`:
+6. Verify the final bytes independently with the published verifier:
 
    ```sh
-   command -v aar >/dev/null && aar verify <record.json>
+   npx -y @frontier-infra/audit verify --evidence evidence.json --aar aar.json --did-json did.json
    ```
+
+   Signing during an audit run is `npx -y @frontier-infra/audit run <repo> --out <dir> --sign-key <private-jwk.json> --did-json <did.json>` — key material by local file path only.
 
 7. Report the exact tool/schema source, signature validity when verified, AAR tier, evidence source, independence limitations, and any unverifiable claim. Keep the receipt and raw verification artifact linked but separately governed.
 

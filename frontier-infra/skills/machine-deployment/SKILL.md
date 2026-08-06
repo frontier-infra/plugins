@@ -34,16 +34,13 @@ Use `goal-contract` to produce a ratifiable contract with:
 
 Hand off to `machine-conformance` for scoring. At minimum run kill/resume, duplicate replay, lying-worker, missing/stale-verifier, forged-rollback, cap/quarantine, override, bypass, and dead-workforce health fixtures before claiming enforcement.
 
-Validate JSON runtime health artifacts with:
+Validate runtime health with the published reducer — add `@frontier-infra/protocol`
+to the deployment and evaluate records with `evaluateRuntimeHealth` /
+`runtimeHealthExitCode`. Score the repository with the published CLI, which
+bundles The Machine's static kit:
 
 ```sh
-node scripts/check-runtime-health.mjs <health-contract.json> --pretty
-```
-
-Use the canonical kit against a deployment repository, not a standard/library repository. First discover or provision the kit from the target repository, a checked-out `frontier-infra/the-machine` repo, or an installed package. Do not invoke `python -m kit` unless the module is actually available:
-
-```sh
-python -c "import kit" && python -m kit score <path-to-deployment-repo>
+npx -y @frontier-infra/audit run <path-to-deployment-repo> --out <dir-outside-that-repo>
 ```
 
 Treat the generated evidence packet as the source for conformance claims. Static implementation review establishes only a `structural candidate`; a README claim or a passing happy path does not establish a Machine level.

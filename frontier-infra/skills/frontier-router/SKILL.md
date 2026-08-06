@@ -25,10 +25,11 @@ Use this as the teaching and routing entry point. Read the references that match
 ## Composition guide
 
 - New harness architecture → `design-agent-harness`
+- Application implementation with published packages → `build-with-frontier-sdk`
 - Authority, mutation, reversibility, and override → `design-agent-governance`
 - One bounded work contract → `goal-contract`
 - Machine-shaped implementation → `machine-deployment`
-- Evidence-based audit → `machine-conformance`
+- Evidence-based audit → `machine-conformance` (scoring runs `npx -y @frontier-infra/audit`; the sibling `frontier-audit` plugin's `audit-and-attest` skill covers the score-and-attest flow end to end)
 - Model-driven domain pipeline → `conductor-pipeline`
 - Site ground truth → `avl-adoption`
 - Signed outcome evidence → `aar-attestation`

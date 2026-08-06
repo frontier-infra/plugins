@@ -18,10 +18,10 @@ Read `../../references/system-architecture.md`, `../../references/threat-model.m
 7. Provide out-of-band operator halt and dial-down with an independent receipt sink and a measured effect SLO.
 8. Define append-only governance events, budgets, ACK escalation, quarantine, health, and anomaly policies.
 9. Model runtime health as four layers: `process`, `scheduler`, `execution`, and `governance`. Aggregate health must fail closed unless all four layers have fresh passing checks; a green process heartbeat must not mask a dead scheduler, blocked provider execution, or missing gate.
-10. Validate sample health contracts with the bundled checker when a JSON health artifact exists:
+10. Validate sample health contracts with the published reducer when a JSON health artifact exists (`npm install @frontier-infra/protocol` in the project):
 
    ```sh
-   node scripts/check-runtime-health.mjs <health-contract.json> --pretty
+   node -e "import('@frontier-infra/protocol').then(async ({evaluateRuntimeHealth}) => console.log(JSON.stringify(evaluateRuntimeHealth(JSON.parse(require('fs').readFileSync(process.argv[1],'utf8'))), null, 2)))" <health-contract.json>
    ```
 
 11. Write allow, deny, expired-verifier, forged-rollback, expired-human-gate, direct-bypass, and dead-workforce health tests.

@@ -13,7 +13,7 @@
 
 | Project | Role | Use it when | Do not mistake it for |
 | --- | --- | --- | --- |
-| frontier-sdk | Canonical shared protocol schemas, TypeScript/Python bindings, reference reducers, and locked conformance fixtures; kernel/app clients and adapter kits follow executable vertical slices. | A standalone application or host integration needs one portable application surface. | A new standard superseding AVL, AAR, ADL, or The Machine; a marketplace plugin; or a universal model abstraction. |
+| frontier-sdk | Published npm packages: `@frontier-infra/protocol` (runtime health types + fail-closed reducer), `@frontier-infra/audit` (conformance scoring, evidence packets, AAR sign/verify), plus `@frontier-infra/avl` from the AVL repo. Python binding and golden fixtures in-repo; further kernel/app clients follow executable vertical slices. | A standalone application or host integration needs one portable application surface. | A new standard superseding AVL, AAR, ADL, or The Machine; a marketplace plugin; or a universal model abstraction. |
 
 ## Reference implementations and deployments
 

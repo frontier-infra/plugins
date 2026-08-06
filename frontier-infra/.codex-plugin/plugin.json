@@ -1,9 +1,9 @@
 {
   "name": "frontier-infra",
-  "version": "0.2.0+codex.20260806033003",
-  "description": "Design, govern, build, and audit reliable AI harnesses using Frontier Infra standards and evidence-bound patterns.",
+  "version": "0.3.0",
+  "description": "Design and build governed agent systems with Frontier Infra patterns, installable SDK components, and evidence-bound verification.",
   "author": {
-    "name": "Jason Kent Brashear",
+    "name": "Titanium Computing",
     "url": "https://frontierinfra.org"
   },
   "homepage": "https://frontierinfra.org",
@@ -20,19 +20,20 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Frontier Infra",
-    "shortDescription": "Design governed AI harnesses with checkable evidence.",
-    "longDescription": "A developer field kit for reliable AI harnesses: philosophy, architecture patterns, sprint contracts, deterministic drivers, fresh workers, independent verification, governance gates, reversibility, runtime health, AAR receipts, AVL ground truth, conformance audits, and repository operating controls. Conformance claims remain shape-stamped and evidence-bound.",
-    "developerName": "Jason Kent Brashear",
+    "shortDescription": "Design governed AI harnesses",
+    "longDescription": "Design and implement governed agent systems without tying the architecture to one model, coding harness, or dashboard. Frontier Infra provides the patterns, contracts, SDK adoption workflow, deterministic control boundaries, independent verification, runtime health, evidence receipts, and conformance discipline needed to turn an agent loop into operable infrastructure.",
+    "developerName": "Titanium Computing",
     "category": "Productivity",
     "capabilities": [
       "Guidance",
       "Templates",
+      "SDK implementation",
       "Verification workflows"
     ],
     "defaultPrompt": [
       "Design a reliable AI harness for my workflow.",
-      "Audit my agent system against The Machine.",
-      "Add governance gates and evidence to my agents."
+      "Add Frontier SDK governance plumbing to my agent application.",
+      "Audit my agent system against The Machine."
     ],
     "brandColor": "#0E7C2E",
     "composerIcon": "./assets/frontier-infra.svg",

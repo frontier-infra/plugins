@@ -31,10 +31,10 @@ Use `Machine-L*` or `Orchestrator-L*`, never a bare level. Score a deployment wi
 1. Determine the deployment shape before scoring.
 2. Inventory every mutation path, including reads with side effects and background jobs.
 3. Map code/config evidence to obligations; prose claims are leads, not evidence. Static mapping can identify a `structural candidate`, not conformance.
-4. Discover the canonical conformance kit before invoking it. Use the deployment docs, a checked-out `frontier-infra/the-machine` repo, or an installed package that explicitly exposes the scorer. If the kit is unavailable, mark kit scoring `NOT-RUN`:
+4. Score with the published CLI, which bundles The Machine's static kit:
 
    ```sh
-   python -c "import kit" && python -m kit score <deployment-repository>
+   npx -y @frontier-infra/audit run <deployment-repository> --out <dir-outside-that-repo>
    ```
 
 5. Mark unexecuted chaos checks `NOT-RUN`; never infer a pass.
