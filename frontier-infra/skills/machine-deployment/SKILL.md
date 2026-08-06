@@ -30,6 +30,13 @@ Use `goal-contract` to produce a ratifiable contract with:
 9. Emit receipts for transitions and gate decisions; publish health for every critical organ and the monitor itself.
 10. Implement runtime health as four independent layers: process heartbeat, scheduler work-claim path, representative execution path, and governance gate path. Aggregate status must fail closed unless every layer passes a fresh check.
 
+## Reference implementations
+
+Start from the working deployments instead of a blank page: `machine-driver`
+(github.com/frontier-infra/machine-driver) is the deterministic Box-2 driver
+for code work with Machine-L2 evidence; `conductor-public` is the
+orchestrator-shaped ops template. Adapt; do not reinvent.
+
 ## Verification
 
 Hand off to `machine-conformance` for scoring. At minimum run kill/resume, duplicate replay, lying-worker, missing/stale-verifier, forged-rollback, cap/quarantine, override, bypass, and dead-workforce health fixtures before claiming enforcement.

@@ -20,7 +20,11 @@ stop: it ships.
 
 1. **Contract first** — a ratified goal contract before code (`goal-contract`).
 2. **Harness shape** — durable state, deterministic driver, fresh workers,
-   single mutation gate (`machine-deployment` for the obligations).
+   single mutation gate (`machine-deployment` for the obligations). Do not
+   design the loop from a blank page: clone the reference driver
+   (`git clone https://github.com/frontier-infra/machine-driver`) and adapt
+   its `driver.py` + `goal.json` contract to the deployment; `conductor-public`
+   is the orchestrator-shaped starting point for ops/triage pipelines.
 3. **Ground truth** — emit an AVL view of real application state so verifiers
    read declared state, not the worker's narrative (`avl-adoption`).
 4. **Health** — emit the four-layer health record; evaluate with the published
