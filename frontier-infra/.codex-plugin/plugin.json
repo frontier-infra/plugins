@@ -7,7 +7,7 @@
     "url": "https://frontierinfra.org"
   },
   "homepage": "https://frontierinfra.org",
-  "repository": "https://github.com/frontier-infra",
+  "repository": "https://github.com/frontier-infra/plugins/tree/main/frontier-infra",
   "license": "MIT",
   "keywords": [
     "agent-harness",
