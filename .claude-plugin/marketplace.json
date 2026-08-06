@@ -31,8 +31,8 @@
     },
     {
       "name": "frontier-audit",
-      "description": "Score and attest AI harnesses. A thin adoption layer over the installable Frontier Audit SDK: inspects local SDK availability, requires explicit install authorization, verifies version and provenance, then runs the SDK-owned audit and attestation workflow.",
-      "version": "0.1.0-rc.1",
+      "description": "Score repositories against The Machine's conformance kit and optionally issue signed AAR evidence receipts via the published @frontier-infra/audit CLI.",
+      "version": "0.2.0",
       "source": "./frontier-audit",
       "category": "development",
       "author": {

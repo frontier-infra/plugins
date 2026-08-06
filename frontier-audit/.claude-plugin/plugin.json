@@ -1,13 +1,13 @@
 {
   "name": "frontier-audit",
-  "description": "Adopt the installable Frontier Audit SDK with explicit bootstrap, provenance checks, and evidence-bound audit execution.",
-  "version": "0.1.0-rc.1",
+  "description": "Score repositories against The Machine's conformance kit and optionally issue signed AAR evidence receipts via the published @frontier-infra/audit CLI.",
+  "version": "0.2.0",
   "author": {
     "name": "Jason Kent Brashear",
     "url": "https://frontierinfra.org"
   },
-  "homepage": "https://frontierinfra.org",
-  "repository": "https://github.com/frontier-infra/plugins",
+  "homepage": "https://frontierinfra.org/sdk",
+  "repository": "https://github.com/frontier-infra/frontier-sdk",
   "license": "MIT",
   "keywords": [
     "audit",
