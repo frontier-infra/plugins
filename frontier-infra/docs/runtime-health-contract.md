@@ -2,7 +2,18 @@
 
 The canonical schema, reference reducers (TypeScript and Python), and golden
 fixtures live in `frontier-infra/frontier-sdk` and ship as the published
-`@frontier-infra/protocol` package — install that; this plugin bundles nothing.
+`@frontier-infra/protocol` package. This plugin includes locked offline
+consumer snapshots generated from those SDK sources, so Codex can validate
+runtime-health payloads without network access. Those snapshots are generated
+copies only: canonical semantics remain SDK-owned and must not be edited in the
+plugin independently.
+
+From `frontier-sdk/`, regenerate and check the plugin snapshots with:
+
+```bash
+node scripts/sync-consumers.mjs ../plugins/frontier-infra
+npm run check:consumers -- ../plugins/frontier-infra
+```
 
 Use `frontier.machine.health.v1` when a harness must prove that "service alive" means more
 than an HTTP process heartbeat.
