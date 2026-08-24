@@ -4,9 +4,9 @@
   "schema_version": "frontier.machine.health.v1",
   "files": {
     "assets/generated/runtime-health.mjs": {
-      "generated_sha256": "14f22ff13441ad6c34fb7eb70a315ca7d6feefc5ffb5b02ad21e9346e1cd4f57",
+      "generated_sha256": "de036e26298f5f78c73e9951e243b3adf911f8a01a56cddea3baf13635f73ee6",
       "source": "packages/typescript/protocol/src/index.mjs",
-      "source_sha256": "8e9316866d549ccbd69315077d11db93dac218a73d5fb45510a9bb5adb5d4a3d"
+      "source_sha256": "174ef1d6e18587dc3d9c1366a1ca1117495814e9125a8988adf12e7c343ccc46"
     },
     "assets/runtime-health-contract.schema.json": {
       "generated_sha256": "e5c5d6957fa251a70c90ba106ee60d203b1992de84aa1d3af379e9243ba7cb02",
